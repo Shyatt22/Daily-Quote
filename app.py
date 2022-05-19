@@ -3,7 +3,6 @@ import datetime
 import requests_cache
 from flask import Flask, render_template
 import requests
-import json
 from datetime import *
 import pytz
 from flask_bootstrap import Bootstrap
@@ -25,7 +24,6 @@ def index():
 def get_quote():
     response=requests.get("https://zenquotes.io/api/today/")
     daily_quote=response.json()
-    #print(daily_quote)
     formatted_quote="\"" + daily_quote[0].get("q") + "\"" + " - " + daily_quote[0].get("a")
     return render_template("qotd.html", quote=formatted_quote)
 
