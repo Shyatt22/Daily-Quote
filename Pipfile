@@ -1,0 +1,39 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+appdirs = "*"
+attrs = "*"
+cattrs = "*"
+certifi = "*"
+charset-normalizer = "*"
+click = "*"
+colorama = "*"
+dominate = "*"
+flask = "*"
+flask-bootstrap = "*"
+flask-sqlalchemy = "*"
+greenlet = "*"
+gunicorn = "*"
+idna = "*"
+importlib-metadata = "*"
+itsdangerous = "*"
+jinja2 = "*"
+markupsafe = "*"
+pytz = "*"
+requests = "*"
+requests-cache = "*"
+six = "*"
+sqlalchemy = "*"
+url-normalize = "*"
+urllib3 = "*"
+visitor = "*"
+werkzeug = "*"
+zipp = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.13"
